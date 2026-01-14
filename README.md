@@ -11,7 +11,7 @@ ollama pull llama3
 
 python -m venv .venv
 
-.\.venv\Scripts\activate
+.\.venv\bin\activate
 
 ## POUR LINUX : 
 
