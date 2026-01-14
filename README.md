@@ -31,7 +31,7 @@ pip install faiss-cpu numpy requests
 python -c "from src.rag_chat import build_index; build_index()"
 
 ## 2) Générer le tableau comparatif no-RAG vs RAG
-python -m src.test_questions
+python -m tests.test_questions
 
 ## (Optionnel) 3) Si vous voulez poser vos propres questions
 python -m tests.own_questions
