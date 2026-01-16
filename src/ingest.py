@@ -26,7 +26,7 @@ def read_text(path: Path) -> str:
 def chunk_text(text: str, chunk_size: int = 300, overlap: int = 50) -> List[str]:
     """
     Découpe le texte en chunks de ~chunk_size mots, avec overlap mots
-    de recouvrement entre deux chunks (exigence chunk_size ∈ [200,500] + overlap).[file:81]
+    de recouvrement entre deux chunks (exigence chunk_size ∈ [200,500] + overlap)
     """
     words = text.split()
     chunks = []
