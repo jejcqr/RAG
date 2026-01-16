@@ -1,6 +1,6 @@
 JACQUIER Jean-Emmanuel  
 BUT Info 2  
-R.15 IA Introduction aux modèles  
+R3.15 IA Introduction aux modèles génératifs
 
 # Rapport – Mini‑projet RAG sur les examens
 
