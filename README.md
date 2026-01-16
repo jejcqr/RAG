@@ -7,7 +7,7 @@ ollama pull nomic-embed-text
 
 ollama pull llama3
 
-## 3) Avoir une version de Python > 3.12
+## 3) Avoir une version de Python < 3.12
 
 ## POUR WINDOWS :
 
