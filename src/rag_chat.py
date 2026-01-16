@@ -63,7 +63,7 @@ def build_index() -> None:
 
 def load_index():
     """
-    Charge l'index et les métadonnées pour la phase de retrieval.[file:85]
+    Charge l'index et les métadonnées pour la phase de retrieval
     """
     index = faiss.read_index(str(INDEX_PATH))
     with META_PATH.open("rb") as f:
@@ -75,7 +75,7 @@ def search_topk(question: str, k: int = 4) -> List[Dict]:
     Implémente le retrieval top-k :
       - calcule l'embedding de la question
       - récupère les k meilleurs chunks
-      - renvoie score, source, extrait du chunk (consignes 7.4).[file:85]
+      - renvoie score, source, extrait du chunk
     """
     index, corpus = load_index()
 
@@ -107,7 +107,7 @@ def llm_rag_answer(question: str, context: str) -> str:
     Génération RAG avec consignes :
       - répondre UNIQUEMENT à partir du contexte
       - sinon dire 'Je ne sais pas.'
-      - citer les sources sous la forme [doc:chunk_id].[file:82][file:85]
+      - citer les sources sous la forme [doc:chunk_id]
     """
     system_prompt = (
         "Tu es un assistant factuel. Tu dois répondre UNIQUEMENT à partir du CONTEXTE fourni. "
@@ -153,7 +153,7 @@ def rag_chat_loop() -> None:
 
 def llm_no_rag(question: str) -> str:
     """
-    Mode no-RAG : on pose directement la question au LLM sans contexte.[file:82]
+    Mode no-RAG : on pose directement la question au LLM sans contexte.
     """
     prompt = (
         "Tu es un assistant qui répond sans avoir accès à des documents externes. "

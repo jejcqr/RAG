@@ -6,7 +6,7 @@ import sys
 BASE_DIR = Path(__file__).resolve().parents[1]
 sys.path.append(str(BASE_DIR))
 
-from src.rag_chat import llm_no_rag, search_topk, format_context, llm_rag_answer  # type: ignore
+from src.rag_chat import llm_no_rag, search_topk, format_context, llm_rag_answer
 
 
 def main() -> None:
