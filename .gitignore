@@ -1,0 +1,8 @@
+.venv/
+__pycache__/
+*.pyc
+# fichiers générés par build_index() et par les tests
+faiss.index
+metadata.pkl
+tests/comparaison_noRAG_vs_RAG.md
+.DS_Store
